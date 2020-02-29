@@ -12,6 +12,8 @@ El curso consta de 4 módulos (y un módulo extra) que puedes encontrar a contin
 - [Módulo 4 – Diseño de una web app](https://docs.google.com/presentation/d/e/2PACX-1vToYcrnkIDXbVsztdMhsujXXZRnUNHahsg0jWTy4SxLMIPm-pQrWMWes7QYnpopJcZE2GuvlmDvUEpx/pub?start=false&loop=false&delayms=3000)
 - [Módulo EXTRA – _Deployment_](https://docs.google.com/presentation/d/e/2PACX-1vR70Xn9nHTr1fJvewNPSBuglLvxRBrnC4iCtAThiFkpkpvgx69qK6Q6yvxgwNB96mxEUBJpQGErvMZN/pub?start=false&loop=false&delayms=3000)
 
+El código y archivos desarrollados durante el curso pueden ser encontradis directamente en el [repositorio de GitHub](https://github.com/CodeandoMexico/curso-python-zapopan) para el curso.
+
 ## Requerimientos
 
 1. Instalar Python en su versión 3.8.x.
