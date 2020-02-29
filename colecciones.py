@@ -1,3 +1,4 @@
+
 # Ejemplo de listas con Python
 skills = [
     "Python", # 0
@@ -9,3 +10,12 @@ skills = [
 # Accedemos a elementos de una lista con índices
 print(skills)
 print(skills[2])
+
+# Ciclo for
+cajas_petri = [1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0]
+total = 0
+for cp in cajas_petri:
+    if cp == 1:
+        total = total + 1
+
+print("Total de pp. con bactería:", total)
