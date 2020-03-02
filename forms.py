@@ -2,6 +2,10 @@ from wtforms import Form
 from wtforms import TextField
 
 class NeuronaForm(Form):
-    entrada_1 = TextField('entrada_1')
-    entrada_2 = TextField('entrada_2')
-    umbral = TextField('umbral')
+    e1 = TextField('e1')
+    p1 = TextField('p1')
+    e2 = TextField('e2')
+    p2 = TextField('p2')
+    e3 = TextField('e3')
+    p3 = TextField('p3')
+    u = TextField('u')

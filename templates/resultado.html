@@ -37,12 +37,18 @@
         <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
           <div class="card card-signin my-5">
             <div class="card-body">
-              <h5 class="card-title text-center">Neurona que toma decisiones</h5>
-              <ul>
-                {% for e in entradas %}
-                <li>Entrada e: {{e}}</li>
-                {% endfor %}
-              </ul>
+              <h4 class="card-title text-center">El veredicto es...</h4>
+
+              <br>
+              {% if res == True %}
+              <div class="alert alert-success" role="alert">
+                <h1 class="text-center">¡POSITIVO!</h1>
+              </div>
+              {% else %}
+              <div class="alert alert-danger" role="alert">
+                <h1 class="text-center">¡NEGATIVO!</h1>
+              </div>
+              {% endif %}
             </div>
           </div>
         </div>

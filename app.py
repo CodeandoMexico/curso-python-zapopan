@@ -11,7 +11,6 @@ skills = [
     "Datos"
 ]
 
-
 @app.route("/")
 def url_principal():
     return render_template("intro.html", habilidades=skills)
@@ -26,12 +25,27 @@ def neurona():
     if request.method == 'GET':
         return render_template("neurona.html")
     if request.method == 'POST':
-        e1 = form.entrada_1.data
-        e2 = form.entrada_2.data
+        e1 = int(form.e1.data)
+        p1 = float(form.p1.data)
+        e2 = int(form.e2.data)
+        p2 = float(form.p2.data)
+        e3 = int(form.e3.data)
+        p3 = float(form.p3.data)
+        u = float(form.u.data)
 
-        entradas = [e1, e2]
+        entradas = [e1, e2, e3]
+        pesos = [p1, p2, p3]
 
-        return render_template("resultado.html", entradas=entradas)
+        producto_interior = 0
+        for i in range(len(entradas)):
+            producto_interior = producto_interior + (entradas[i] * pesos[i])
+
+        if producto_interior >= u:
+            resultado = True
+        else:
+            resultado = False
+
+        return render_template("resultado.html", res=resultado)
 
 if __name__ == "__main__":
     app.run(port=5000, debug=True)
